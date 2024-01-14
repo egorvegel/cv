@@ -4,63 +4,170 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
             <nav class="nav">
-                <div class="wrapper">
-                    <div class="nav_links">
-                        <a href="#" class="nav_link">Опыт работы</a>
-                        <a href="#" class="nav_link">Образование</a>
-                        <a href="#" class="nav_link">Курсы</a>
-                        <a href="#" class="nav_link">Контакты</a>
-                    </div>
+                <div class="nav_links">
+                    <a href="#" class="nav_link">О себе</a>
+                    <a href="#" class="nav_link">Опыт работы</a>
+                    <a href="#" class="nav_link">Образование</a>
+                    <a href="#" class="nav_link">Егор Вегель</a>
+                    <a href="#" class="nav_link">Курсы</a>
+                    <a href="#" class="nav_link">Скиллы</a>
+                    <a href="#" class="nav_link">Контакты</a>
                 </div>
             </nav>
     </header>
-    <div>
-        <div class="main_page">
-            <div class="wrapper_img">
-                <h1>Егор Вегель</h1>
-                <div class="socials">
-        
-                </div>
-                <div class="info">
-                    <ul>
-                        <li>
-                        <a href="#">VK</a> 
-                        </li>
-                        <li>
-                            <a href="#">Tg</a>    
-                        </li>
-                        <li>
-                            <a href="#">GitHub</a>
-                        </li>
-                    </ul>
-                </div>
+    <div class="main_page">
+        <div class="main_page_block">
+            <div class="left_page">
+                <img src="images/ava.jpg" alt="egor vegel" class="photo">
+                <div class="worker">Аналитик</div>
             </div>
-        </div>
+            
+            <div class="right_page">
+                <h2 class="title">Обо мне</h2>
+
+                <ul>
+                    <li>Вегель Егор Александрович</li>
+                    <li>+7(909)089-86-33</li>
+                    <li>egor.vegel@mail.ru</li>
+                    <li>21 год</li>
+                    <li>Гражданство: Казахстан</li>
+                </ul>
+            </div>    
+            <div class="socials">
+                <ul class="socials_list">
+                    <li class="socials_link">
+                        <a href="#">
+                            <i class="fa-solid fa-download"></i>
+                        </a> 
+                    </li>
+                    <li class="socials_link">
+                        <a href="#">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a> 
+                    </li>
+                    <li class="socials_link">
+                        <a href="#">
+                            <i class="fa-brands fa-telegram"></i>
+                        </a>    
+                    </li>
+                    <li class="socials_link">
+                        <a href="#">
+                            <i class="fa-brands fa-vk"></i>
+                        </a> 
+                    </li>
+                    <li class="socials_link">
+                        <a href="#">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>     
+        </div>            
+    </div>
        
 
         <div class="work">
-dsa
+            <div class="wrapper">
+                <h2 class="title">Опыт работы</h2>
+
+                <div class="work_blocks">
+                    <div class="work_block">
+                        <div class="work_block_info">
+                            <div class="info_title">Стажер-аналитик</div>  
+                            <div class="info_years">11.2023 — н.в.</div>  
+                            
+                            
+                            <ul class="info_list">
+                                <li>Переписал выгрузку данных с системы TerraData в GreenPlum</li>
+                                <li>Готовил CDR-отчеты высшему руководству</li>
+                            </ul>
+                        </div>
+
+                        <div class="work_block_company">
+                            <h4 class="info_company">ПАО МТС</h4>
+                            <img src="images/mts_logo.png" alt="ПАО МТС" class="work_img">
+                           
+                        </div>
+                        
+                        
+    
+                        
+                    </div>
+
+                    <div class="work_block">
+                        <div class="work_block_info">
+                            <div class="info_title">Web-разработчик</div>  
+                            <div class="info_years">11.2020 — 02.2021</div>  
+                            
+                            
+                            <ul class="info_list">
+                                <li>Создал 2 полноценных сайта (за 2 месяца).</li>
+                                <li>Добавлял новый контент и функционал на главный сайт компании с помощью CMS Joomla.</li>
+                            </ul>
+                            </ul>
+                        </div>
+
+                        <div class="work_block_company">
+                            <h4 class="info_company">ТОО Антис-Мед</h4>
+                            <img src="images/antis.png" alt="Антис Мед" class="work_img">
+                           
+                        </div>       
+                    </div>
+
+                    <!--
+                    <div class="work_block">
+
+                        <img src="images/antis.png" alt="Антис Мед" class="work_img">
+    
+                        <div class="work_block_info">
+                            <div class="info_title">Web-разработчик</div>  
+                            <h4 class="info_company">ТОО Антис-Мед</h4>
+                            <div class="info_years">11.2020 — 02.2021</div>  
+                            
+                            <ul class="info_list">
+                                <li>Создал 2 полноценных сайта (за 2 месяца).</li>
+                                <li>Добавлял новый контент и функционал на главный сайт компании с помощью CMS Joomla.</li>
+                            </ul>
+                        </div>
+                    </div>-->
+                </div>
+
+              
+            </div>
         </div>
 
         <div class="education">
-dsads
-        </div>
+            <div class="wrapper">
+                <h2 class="title">Образование</h2>
 
-        <div class="portfolio">
-dsadas
+                <div class="education_blocks">
+                    <div class="education_block_year">2025</div>
+                    <div class="education_block">
+                        <h3 class="education_block_title">Национальный исследовательский
+                            университет "Высшая школа экономики", Москва, Бакалавр</h3>
+                        <div class="education_block_subtitle">Высшая школа бизнеса, Бизнес-информатика</div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="courses">
                 sdad
         </div>
-    </div>
+
+        <div class="portfolio"></div>
+
     <footer>
 
     </footer>
+    <script src="https://kit.fontawesome.com/046d87403a.js" crossorigin="anonymous"></script>
 </body>
 </html>

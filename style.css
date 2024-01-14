@@ -1,8 +1,22 @@
-/* https://www.yan-holtz.com/ */
+/* https://www.yan-holtz.com/ 
+https://www.behance.net/gallery/42809601/CVitae-Responsive-Materialized-Resume-CV
+
+https://codepen.io/twisterblog/pen/JjjRBKE
+*/
 
 * {
     margin: 0;
     padding: 0;
+
+    font-family: 'Roboto', sans-serif;
+    color: #434E5E;
+}
+
+.title{
+    margin-bottom: 50px;
+    
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 a {
@@ -21,6 +35,13 @@ body{
 	margin: 0 auto;
 }
 
+
+.work, .education{
+    padding: 50px 0;
+}
+
+/* --------------------------------*/
+
 .nav {
     width: 100%;
     min-height: 70px;
@@ -29,22 +50,29 @@ body{
     background-color: #fff;
     left: 0;
     top: 0;
-    z-index: -1;
+    z-index: 5;
 }
 
 .nav_links{
     display: flex;
     justify-content: end;
+
+    text-align: center;
 }
 
 .nav_link {
-    margin: 0 20px;
+    width: calc((100% / 7) - 40px);
+    padding: 0 20px; 
+}
+
+.nav_link:hover{
+    background-color: #ccc;
 }
 
 .main_page{
-    width: 100vw;
     height: 100vh;
     min-height: 100%; 
+    box-sizing: border-box;
     background-color: #ccc;
     background-image: url("images/fon.jpeg");
     background-position: 50% 50%;
@@ -58,8 +86,144 @@ body{
     align-items: center;
 }
 
-.wrapper_img{
-    width: 100%;
+
+
+
+/*  main_page_block */
+.main_page_block{
+    display: flex;
+    
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.socials {
+    min-width: 80px;
+}
+
+
+.socials_list{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
     height: 100%;
-    background-color: rgb(38, 38, 38, 0.65);
+
+    border-left: 1px solid #ccc;
+}
+
+.socials_link{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+
+    background-color: #fff;
+}
+
+
+
+.left_page{
+    
+}
+
+.left_page .photo{
+    width: 280px;
+}
+
+.left_page .worker{
+    padding-left: 10px;
+    padding-top: 19px;
+    font-size: 20px;
+}
+
+
+.right_page{
+    padding: 50px 30px;
+    padding-left: 30px;
+}
+
+.right_page .title{
+    min-width: 200px;
+    text-align: left;
+}
+
+
+
+/*  work */
+.work{
+    padding: 50px 0;
+}
+
+.work_img {
+    width: 50px;
+    height: 50px;
+}
+
+.work_block{
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 50px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.work_block::before{
+    content: "";
+    display: block;
+    width: 2px;
+    height: 127%;
+    background-color: #000;
+
+    position: absolute;
+    left: 0;
+    top: 20%;
+}
+
+.work_block::after{
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: -9px;
+    top: 4px;
+    border-radius: 50%;
+    border: 3px solid #000;
+}
+
+.work_block_info{
+    margin-left: 50px;
+}
+
+.work_block_company{
+    display: flex;
+    justify-content: center;
+}
+
+.info_company{
+    margin-left: 15px;
+}
+
+.info_title{
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.info_list{
+    margin-left: 30px;
+}
+
+.info_years {
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #aab4c3;
+}
+
+
+/* education */
+.education{
+    background-color: #f1f1f1;
 }
